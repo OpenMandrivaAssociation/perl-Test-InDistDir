@@ -15,6 +15,7 @@ BuildRequires: perl(File::Find)
 BuildRequires: perl(File::Spec)
 BuildRequires: perl(File::Temp)
 BuildRequires: perl(Test::More)
+BuildRequires: perl-devel
 BuildArch: noarch
 
 %description
