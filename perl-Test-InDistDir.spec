@@ -8,7 +8,7 @@ Release:    1
 Summary:    Test environment setup for development with IDE
 License:    GPL+ or Artistic
 Group:      Development/Perl
-Url:        http://search.cpan.org/dist/%{upstream_name}
+Url:        https://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/Test/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires: perl(File::Find)
