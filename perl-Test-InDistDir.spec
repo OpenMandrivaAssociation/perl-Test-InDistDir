@@ -1,15 +1,13 @@
 %define upstream_name    Test-InDistDir
-%define upstream_version 1.112071
-
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:    1
+Version:    1.112071
+Release:    2
 
 Summary:    Test environment setup for development with IDE
 License:    GPL+ or Artistic
 Group:      Development/Perl
-Url:        https://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/Test/%{upstream_name}-%{upstream_version}.tar.gz
+Url:        https://metacpan.org/dist/%{upstream_name}
+Source0:    http://www.cpan.org/modules/by-module/Test/%{upstream_name}-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires: perl(File::Find)
@@ -35,7 +33,7 @@ up with almost the same environment it'd get from EUMM/prove/etc., even
 when it's actually run inside the t/ directory.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
